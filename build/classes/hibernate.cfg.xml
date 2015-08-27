@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="musicboxdb">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">developer</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/hibernatedb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.default_schema">hibernatedb</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.sriharrsha.musicbox.model.UserDetails"></mapping>    
+        <mapping class="com.sriharrsha.musicbox.model.Bookings"></mapping>    
+        <mapping class="com.sriharrsha.musicbox.model.Instrument"></mapping>    
+        <mapping class="com.sriharrsha.musicbox.model.Slot"></mapping> 
+           
+    </session-factory>
+    
+</hibernate-configuration>
