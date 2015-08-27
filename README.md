@@ -1,2 +1,0 @@
-# vitmusicbox
-VIT MusicBox Application
